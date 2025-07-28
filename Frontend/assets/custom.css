@@ -1,0 +1,72 @@
+/* Background Gradient with Stars */
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#MainMenu, footer, header {
+    visibility: hidden;
+}
+
+/* Glow effect for headers */
+h1, h2, h3 {
+    color: #fff;
+    text-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2;
+}
+
+/* Input field styling */
+input, textarea {
+    background-color: #1e1e2f !important;
+    color: white !important;
+    border: 1px solid #8a2be2 !important;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+
+/* Buttons with glow and hover effect */
+button {
+    background: linear-gradient(to right, #8a2be2, #da22ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #8a2be2;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #da22ff;
+    transform: scale(1.05);
+}
+
+/* Special animated stars */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('https://raw.githubusercontent.com/vaibhavcodes-ai/assets/main/star-bg.gif') repeat;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+/* Parsed resume box */
+textarea[aria-label="Parsed Resume Preview"] {
+    font-family: monospace;
+    background: #111827;
+    color: #a0f0ff;
+    border-radius: 10px;
+    border: 1px solid #8a2be2;
+}
+
+/* Metric cards */
+div[data-testid="stMetric"] {
+    background: rgba(138, 43, 226, 0.1);
+    border-left: 5px solid #8a2be2;
+    padding: 10px;
+    border-radius: 10px;
+}
