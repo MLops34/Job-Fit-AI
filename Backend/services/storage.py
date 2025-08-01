@@ -1,6 +1,5 @@
 # services/storage.py
 
-# In-memory storage for resumes and job descriptions
 store = {
     "resumes": {},  # {user_id: resume_text}
     "job_descriptions": {}  # {user_id: jd_text}

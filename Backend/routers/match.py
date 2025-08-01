@@ -76,7 +76,7 @@ def match_score():
 
     match_score = matcher.calculate_match_score(resume_text, job_description)
 
-    return {
+    return { 
         "match_score_percent": match_score,
         "message": "Match score calculated successfully."
     }

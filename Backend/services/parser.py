@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz  
 import docx
 import re
 from io import BytesIO
