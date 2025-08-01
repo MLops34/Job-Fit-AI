@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: jobfitai-backend
+    env: python
+    plan: free        # or starter / standard as you need
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /docs
+    region: oregon      # or choose closest region to your users
+    autoDeploy: true
+    repo: <YOUR_GIT_REPO_URL>  # you can fill this via dashboard too
