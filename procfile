@@ -11,4 +11,4 @@ services:
     healthCheckPath: /docs
     region: oregon      # or choose closest region to your users
     autoDeploy: true
-    repo: <YOUR_GIT_REPO_URL>  # you can fill this via dashboard too
+    repo: https://github.com/MLops34/Job-Fit-AI/tree/main # you can fill this via dashboard too
