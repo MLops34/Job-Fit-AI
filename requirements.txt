@@ -1,9 +1,10 @@
 fastapi
 uvicorn[standard]
-scikit-learn
-python-docx
 PyMuPDF
+python-docx
+scikit-learn
 spacy
 streamlit
 requests
 pydantic
+python-multipart
